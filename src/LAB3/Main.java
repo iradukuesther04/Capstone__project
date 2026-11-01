@@ -14,9 +14,9 @@ public class Main {
         boolean running = true;
 
         while (running) {
-            System.out.println("\n========================================");
+
             System.out.println("     UNIVERSITY MANAGEMENT SYSTEM");
-            System.out.println("========================================");
+
             System.out.println("1. Add Student");
             System.out.println("2. View All Students");
             System.out.println("3. Remove Student");
@@ -26,7 +26,6 @@ public class Main {
             System.out.println("7. Enroll Student in Course");
             System.out.println("8. View Students and Their Courses");
             System.out.println("9. Exit");
-            System.out.println("========================================");
 
             System.out.print("Enter your choice: ");
 
