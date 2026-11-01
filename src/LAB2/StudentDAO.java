@@ -34,12 +34,14 @@ public class StudentDAO {
                 System.out.println("Student registered successfully!");
             }
 
-        } catch (SQLException e) {
+        }
+
+        catch (SQLException e) {
             System.out.println("Error registering student: "
                     + e.getMessage());
         }
     }
-    // Display all registered students
+
     public void displayStudents() {
 
         String sql = "SELECT * FROM students ORDER BY id";
@@ -61,7 +63,6 @@ public class StudentDAO {
                 System.out.println("Name: " + result.getString("name"));
                 System.out.println("Email: " + result.getString("email"));
                 System.out.println("Age: " + result.getInt("age"));
-                System.out.println("------------------------------");
             }
 
             if (!found) {
@@ -74,7 +75,6 @@ public class StudentDAO {
         }
     }
 
-    // Delete a student using their student number
     public void deleteStudent(String studentNumber) {
 
         String sql = "DELETE FROM students WHERE student_number = ?";

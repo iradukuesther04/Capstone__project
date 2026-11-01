@@ -6,7 +6,6 @@ import java.sql.Statement;
 
 public class CourseDAO {
 
-    // Display all courses
     public void displayCourses() {
 
         String sql = "SELECT * FROM courses ORDER BY id";
@@ -15,7 +14,7 @@ public class CourseDAO {
              Statement statement = connection.createStatement();
              ResultSet result = statement.executeQuery(sql)) {
 
-            System.out.println("\n===== AVAILABLE COURSES =====");
+            System.out.println("\n      AVAILABLE COURSES     ");
 
             boolean found = false;
 
@@ -29,7 +28,6 @@ public class CourseDAO {
                         + result.getString("course_name"));
                 System.out.println("Credits: "
                         + result.getInt("credits"));
-                System.out.println("----------------------------");
             }
 
             if (!found) {

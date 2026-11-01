@@ -46,14 +46,14 @@ import java.sql.SQLException;
 //
 //        StudentDAO studentDAO = new StudentDAO();
 //
-//        // Display students before deletion
+//
 //        System.out.println("BEFORE DELETION:");
 //        studentDAO.displayStudents();
 //
-//        // Delete the test student
+//
 //        studentDAO.deleteStudent("ST001");
 //
-//        // Display students after deletion
+//
 //        System.out.println("\nAFTER DELETION:");
 //        studentDAO.displayStudents();
 //    }
@@ -74,10 +74,10 @@ public class Main {
 
         EnrollmentDAO enrollmentDAO = new EnrollmentDAO();
 
-        // Enroll student ID 1 in course ID 1
+
         enrollmentDAO.enrollStudent(1, 1);
 
-        // Update the grade for enrollment ID 1
+
         enrollmentDAO.updateEnrollmentGrade(1, 85.5);
     }
 }

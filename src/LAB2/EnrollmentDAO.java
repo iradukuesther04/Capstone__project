@@ -6,7 +6,6 @@ import java.sql.SQLException;
 
 public class EnrollmentDAO {
 
-    // Enroll a student in a course
     public void enrollStudent(int studentId, int courseId) {
 
         String sql = """
@@ -32,7 +31,6 @@ public class EnrollmentDAO {
         }
     }
 
-    // Update the grade for an enrollment
     public void updateEnrollmentGrade(
             int enrollmentId,
             double grade) {
