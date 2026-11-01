@@ -7,7 +7,7 @@ public class GraduateStudent extends Student {
             String name,
             String email,
             int age
-    ) {
+    ){
         super(id, name, email, age);
     }
 

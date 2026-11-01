@@ -18,18 +18,22 @@ import java.util.Set;
         }
 
         public int getAge() {
+
             return age;
         }
 
         public void setAge(int age) {
+
             this.age = age;
         }
 
         public Map<Course, Double> getCourseMarks() {
+
             return new HashMap<>(courseMarks);
         }
 
         public Set<String> getSkills() {
+
             return new HashSet<>(skills);
         }
 

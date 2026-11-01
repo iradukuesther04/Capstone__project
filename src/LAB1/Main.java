@@ -23,7 +23,6 @@ public class Main {
                 25
         );
 
-        // Create courses
         Course javaCourse = new Course(
                 "CS101",
                 "Java Programming",
@@ -102,7 +101,7 @@ public class Main {
         }
 
 
-        System.out.println("\n===== COURSE ENROLLMENTS =====");
+        System.out.println("\n==== COURSE ENROLLMENTS =====");
 
         System.out.println(
                 javaCourse.getCourseName() +
