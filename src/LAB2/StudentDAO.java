@@ -1,4 +1,5 @@
 package LAB2;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -50,7 +51,7 @@ public class StudentDAO {
              Statement statement = connection.createStatement();
              ResultSet result = statement.executeQuery(sql)) {
 
-            System.out.println("\n===== REGISTERED STUDENTS =====");
+            System.out.println("\n      REGISTERED STUDENTS      ");
 
             boolean found = false;
 

@@ -2,11 +2,20 @@ package LAB2;
 
 import java.sql.Connection;
 import java.sql.SQLException;
-//
-//public class Main {
-//
-//    public static void main(String[] args) {
-//
+
+public class Main {
+
+  public static void main(String[] args) {
+      EnrollmentDAO enrollmentDAO = new EnrollmentDAO();
+
+
+      enrollmentDAO.enrollStudent(1, 1);
+
+
+      enrollmentDAO.updateEnrollmentGrade(1, 85.5);
+  }
+}
+// connecting interj and database
 //        try (Connection connection = DBConnection.getConnection()) {
 //
 //            System.out.println("Connected to PostgreSQL successfully!");
@@ -20,11 +29,7 @@ import java.sql.SQLException;
 //
 //    }
 //}
-
-//public class Main {
-//
-//    public static void main(String[] args) {
-//
+// ADDING STUDENT
 //        StudentDAO studentDAO = new StudentDAO();
 //
 //
@@ -39,11 +44,8 @@ import java.sql.SQLException;
 //        studentDAO.displayStudents();
 //    }
 //}
-
-//public class Main {
-//
-//    public static void main(String[] args) {
-//
+// DELETING STUDENT FROM DATABASE
+    //
 //        StudentDAO studentDAO = new StudentDAO();
 //
 //
@@ -58,26 +60,10 @@ import java.sql.SQLException;
 //        studentDAO.displayStudents();
 //    }
 //}
-//public class Main {
-//
-//    public static void main(String[] args) {
+// DISPLAY COUSES
 //
 //        CourseDAO courseDAO = new CourseDAO();
 //
 //        courseDAO.displayCourses();
 //    }
 //}
-
-public class Main {
-
-    public static void main(String[] args) {
-
-        EnrollmentDAO enrollmentDAO = new EnrollmentDAO();
-
-
-        enrollmentDAO.enrollStudent(1, 1);
-
-
-        enrollmentDAO.updateEnrollmentGrade(1, 85.5);
-    }
-}
