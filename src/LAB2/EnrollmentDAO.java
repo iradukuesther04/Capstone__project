@@ -47,7 +47,7 @@ public class EnrollmentDAO {
             ps.setDouble(1, grade);
             ps.setInt(2, enrollmentId);
 
-            int rows = ps.executeUpdate();
+            int rows = ps.executeUpdate ();
 
             if (rows > 0) {
                 System.out.println("Enrollment grade updated successfully!");
