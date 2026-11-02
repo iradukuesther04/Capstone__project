@@ -12,14 +12,14 @@ public class Main {
         Student student1 = new UndergraduateStudent(
                 "ST001",
                 "Alice",
-                "alice@example.com",
+                "alice@gmail.com",
                 21
         );
 
         Student student2 = new GraduateStudent(
                 "ST002",
                 "David",
-                "david@example.com",
+                "david@gmail.com",
                 25
         );
 
@@ -39,7 +39,7 @@ public class Main {
         Instructor instructor = new Instructor(
                 "INS001",
                 "Mr John",
-                "john@example.com",
+                "john@gmail.com",
                 "Computer Science"
         );
 
@@ -73,24 +73,24 @@ public class Main {
         instructorAssignments.put(javaCourse, instructor);
         instructorAssignments.put(databaseCourse, instructor);
 
-        System.out.println("===== REGISTERED STUDENTS =====");
+        System.out.println(" \n     REGISTERED STUDENTS        ");
 
         for (Student student : students) {
             System.out.println(student);
         }
 
-        System.out.println("\n===== COURSES =====");
+        System.out.println("\n        COURSES          ");
 
         System.out.println(javaCourse);
         System.out.println(databaseCourse);
 
 
-        System.out.println("\n===== INSTRUCTORS =====");
+        System.out.println("\n        INSTRUCTORS            ");
 
         System.out.println(instructor);
 
 
-        System.out.println("\n===== GPA CALCULATIONS =====");
+        System.out.println("\n       GPA CALCULATIONS          ");
 
         for (Student student : students) {
             System.out.println(
@@ -101,7 +101,7 @@ public class Main {
         }
 
 
-        System.out.println("\n==== COURSE ENROLLMENTS =====");
+        System.out.println("\n         COURSE ENROLLMENTS        ");
 
         System.out.println(
                 javaCourse.getCourseName() +
@@ -109,7 +109,7 @@ public class Main {
                         javaCourse.getEnrolledStudents()
         );
 
-        System.out.println("\n===== INSTRUCTOR ASSIGNMENTS =====");
+        System.out.println("\n        INSTRUCTOR ASSIGNMENTS       ");
 
         for (Map.Entry<Course, Instructor> entry :
                 instructorAssignments.entrySet()) {
